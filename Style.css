@@ -1,0 +1,60 @@
+body {
+    background-color: #edf9e8;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+
+}
+.container {
+    max-width:800px;
+    margin: auto;
+    background-color: #f89696;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.chckbox-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.chckbox-container label {
+    display: flex;
+    align-items: center;
+
+}
+.
+h1 {
+    text-align: center;
+    color: #333;
+}
+h2 {
+    color: #555;
+}
+button {
+    background-color: #0a8f39;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    
+    cursor: pointer;
+    margin-right: 10px;
+    width:100%;
+
+}
+button:hover {
+    background-color: #00b30c;
+}
+#password-output {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f1f508;
+    border: none;
+    height: 15px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}

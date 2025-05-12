@@ -1,13 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="lt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fasttrack</title>
+    <link rel="stylesheet" href="Style.css">
 </head>
 <body>
-    <h1>Atsiskaitomasis</h1>
-    <H2>BANDOM123</H2>
+    <h1>Atsiskaitomasis darbas</h1>
+    <p> 
+        <strong>Vardas:</strong> Kestutis<br>
+        <strong>Grupė:</strong> Fasttrack<br>
+        <strong>Data:</strong> 2025-05-12<br>
+        <strong>Užduotis:</strong> Sukurti slaptažodžių generatorių naudojant HTML, CSS ir JavaScript.<br>
+        <strong>Aprašymas:</strong> Slaptažodžių generatorius leidžia vartotojui pasirinkti slaptažodžio ilgį ir simbolius, iš kurių jis bus sugeneruotas. Vartotojas gali pasirinkti didžiąsias raides, mažąsias raides, skaičius ir simbolius. Sugeneruotas slaptažodis gali būti nukopijuotas į iškarpinę arba išvalytas.
+    </p>
+   
+    <div class="container">
+        <h2>Slaptažodžių generatorius</h2>
+        <p>Pasirinkite slaptažodžio ilgį ir simbolius, iš kurių jis bus sugeneruotas.</p>
+    <form id="password-generator">
+        <table>
+            <tr>
+                <td> Slaptažodžio ilgis:</td>
+                <td><input type="number" id="passwordLength" min="1" max="100" required value="12"></td>
+            </tr>
+        </table>
+        <div class="checkbox-container">
+            <label for="uppercase">Didžiosios raidės:
+                <input type="checkbox" id="uppercase"></td>
+            </label>
+            <label for="lowercase">Mažosios raidės:
+                <input type="checkbox" id="lowercase"></td>
+            </label>
+            <label for="numbers">Skaičiai:
+                <input type="checkbox" id="numbers"></td>
+            </label>
+            <label for="symbols">Simboliai:
+                <input type="checkbox" id="symbols"></td>
+            </label>
+            
+        </div>
+  
+        <div>
+            <button type="button" id="generatePassword">Sugeneruoti slaptažodį</button></td>
+            <button type="button" id="copyPassword">Kopijuoti slaptažodį</button></td>
+            <button type="button" id="clearPassword">Išvalyti</button></td>
+        </div>
+            </form>
+    <div id="password-output"></div>
+    
+</div>
+
+    
 
 </body>
+<script src="app.js"></script>
 </html>
